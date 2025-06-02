@@ -1,0 +1,10 @@
+ {% extends "base.html" %}
+{% block content %}
+<h2>Add a Cake Recipe 🧁</h2>
+<form method="POST">
+    Cake Title: <input name="title"><br><br>
+    Image URL: <input name="image"><br><br>
+    Ingredients (comma-separated): <input name="ingredients"><br><br>
+    <button type="submit">Add Recipe</button>
+</form>
+{% endblock %}
