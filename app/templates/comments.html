@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Share Your Cake Thoughts 📝</h2>
+<form method="POST">
+    Your Name: <input name="user"><br><br>
+    Comment: <input name="message"><br><br>
+    <button type="submit">Post</button>
+</form>
+<hr>
+{% for c in comments %}
+    <p><strong>{{ c.user }}</strong>: {{ c.message }}</p>
+{% endfor %}
+{% endblock %}
